@@ -2,7 +2,7 @@
 
 class Rater
   def rate(from_currency, to_currency)
-    key = 'c178c19843cf8020f701f1a4'
+    key = 'Your Key'
     url = "https://v6.exchangerate-api.com/v6/#{key}/pair/#{from_currency}/#{to_currency}"
     uri = URI(url)
     response = Net::HTTP.get(uri)
